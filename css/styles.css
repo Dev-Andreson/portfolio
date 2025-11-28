@@ -1,0 +1,44 @@
+:root {
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::before,::after {
+    box-sizing: border-box;
+}
+
+.section {
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    position: block;
+    left: 270px;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    z-index: 0;
+}
+
+/* Aside Start*/
+aside {
+    width: 270px;
+    height: 100%;
+    background: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+/* Aside End*/
