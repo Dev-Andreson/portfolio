@@ -23,22 +23,410 @@
 .section {
     background: var(--bg-black-900);
     min-height: 100vh;
-    position: block;
-    left: 270px;
-    top: 0;
-    right: 0;
+    padding: 0 30px;
     opacity: 1;
-    z-index: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.main-content {
+    padding-left: 270px;
+}
+
+.padd-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.section .container {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.section-tittle {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+
+    h2 {
+        font-size: 40px;
+        color: var(--text-black-900);
+        font-weight: 700;
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 4px;
+            width: 50px;
+            background-color: var(--skin-color);
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+        &::after {
+            content: '';
+            height: 4px;
+            width: 25px;
+            background-color: var(--skin-color);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 8px;
+        }
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+
+.btn {
+    display: inline-block;   
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    background: var(--skin-color);
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    transform: scale(1.05);
+    background: #e63b55;
 }
 
 /* Aside Start*/
 aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 270px;
     height: 100%;
+    padding: 30px;
     background: var(--bg-black-100);
+    border-right: 1px solid var(--bg-black-50);
     position: fixed;
     left: 0;
     top: 0;
     z-index: 10;
 }
+
+aside .logo {
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+aside .logo a {
+    position: relative;
+    font-size: 20px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    letter-spacing: 5px;
+    padding: 15px 20px;
+}
+
+aside .logo a::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    left: 0;
+    bottom: 0;
+}
+aside .logo a::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    right: 0;
+    top: 0;
+}
+
+aside .nav-toggler {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+}
+
+aside .nav-toggler span {
+    display: inline-block;
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: relative;
+}
+aside .nav-toggler span::before {
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+aside .nav-toggler span::after {
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+aside .logo a span {
+    font-family: 'Clicker Script', cursive;
+    font-size: 30px;
+}
+
+aside .nav {
+    margin-top: 50px;
+}
+
+aside .nav li {
+    display: block;
+    margin-bottom: 20px;
+}
+
+aside .nav li a {
+    display: block;
+    color: var(--text-black-900);
+    padding: 5px 15px;
+    border-bottom: 1px solid var(--bg-black-50);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+aside .nav li a.ativar {
+    color: var(--skin-color);
+}
+
+aside .nav li a i {
+    margin-right: 15px;
+}
 /* Aside End*/
+
+/* Home Start*/
+.home {
+    min-height: 100vh;
+    display: flex;
+    color: var(--txt-black-900);
+}
+
+.home .home-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+h3.hello {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+h3.hello span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--skin-color);
+}
+
+h3.my-profession {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.typing {
+    color: var(--skin-color);
+}
+
+.home-info p {
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: var(--text-black-700);
+}
+
+.home .home-img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+}
+.home-img::after {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    right: 20px;
+    bottom: -40px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+}
+.home-img::before {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: -20px;
+    top: -40px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+}
+
+
+.home .home-img img {
+    margin: auto;
+    border-radius: 5px;
+    height: 400px;
+}
+/* Home End*/
+
+/* About Start*/
+.about .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    h3.tittle {
+        font-size: 24px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        color: var(--text-black-900);
+    }
+
+    .about-text {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            color: var(--text-black-900);
+
+            span {
+                color: var(--skin-color);
+            }
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 25px;
+            color: var(--text-black-700);
+        }
+    }
+
+    .personal-info {
+        flex: 0 0 60%;
+        max-width: 60%;
+        margin-top: 40px;
+
+        .info-item {
+            flex: 0 0 50%;
+            max-width: 50%;
+
+            p {
+                font-weight: 600;
+                padding: 10px 0;
+                font-size: 16px;
+                color: var(--text-black-900);
+                border-bottom: 1px solid var(--bg-black-50);
+
+                span {
+                    font-weight: 400;
+                    color: var(--text-black-700);
+                    margin-left: 4px;
+                    display: inline-block;
+                }
+            }
+        }
+
+        .buttons {
+            margin-top: 30px;
+
+            .btn {
+                margin-left: 15px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .skills {
+        flex: 0 0 40%;
+        max-width: 40%;
+        margin-top: 40px;
+
+        .skill-item {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 10px;
+
+            h5 {
+                line-height: 40px;
+                font-weight: 600;
+                font-size: 16px;
+                color: var(--text-black-900);
+                text-transform: capitalize;
+            }
+
+            .progress {
+                background-color: var(--bg-black-50);
+                height: 7px;
+                border-radius: 4px;
+                width: 100%;
+                position: relative;
+
+                .progress-in {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    border-radius: 4px;
+                    background-color: var(--skin-color);
+                }
+            }
+
+            .skills-percent {
+                position: absolute;
+                right: 0;
+                color: var(--text-black-900);
+                top: -40px;
+                font-weight: 400;
+                line-height: 40px;
+            }
+        }
+    }
+
+    .education, .experience {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-top: 30px;
+    }
+}
+/* About End*/

@@ -10,6 +10,7 @@
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/color-1.css">
     <script src="js/script.js" defer></script>
     <meta name="author" content="Dev.Andreson">
     <title>Dev.Andreson</title>
@@ -22,13 +23,16 @@
                 <div class="logo">
                     <a href="#"><span>Dev.</span>Andreson</a>
                 </div>
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
                 <nav>
-                    <ul>
+                    <ul class="nav">
                         <li><a href="#inicio" class="ativar"><i class="bi bi-house"></i> Inicio</a></li>
-                        <li><a href="#sobre"><i class="bi bi-person"></i></a> Sobre</li>
-                        <li><a href="#servicos"><i class="bi bi-list-check"></i></a> Serviços</li>
-                        <li><a href="#portfolio"><i class="bi bi-briefcase"></i></a> Portfolio</li>
-                        <li><a href="#contato"><i class="bi bi-wechat"></i></a> contato</li>
+                        <li><a href="#sobre"><i class="bi bi-person"></i>Sobre</a></li>
+                        <li><a href="#servicos"><i class="bi bi-list-check"></i>Serviços</a></li>
+                        <li><a href="#portfolio"><i class="bi bi-briefcase"></i>Portfolio</a></li>
+                        <li><a href="#contato"><i class="bi bi-wechat"></i>contato</a></li>
                     </ul>
                 </nav>
             </aside>
@@ -36,9 +40,125 @@
         <!-- Aside End-->
         <!-- Main Content Start-->
          <div class="main-content">
-            <section class="home section">
-                
+            <!-- Home Section Start-->
+            <section class="home section hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hello, my name is <span class="name">Andreson rodrigues</span></h3>
+                            <h3 class="my-profession">I'm a <span class="typing">web designer</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem ipsa ipsam quasi, optio odio corrupti provident eligendi alias dolore consequuntur cumque obcaecati voluptatum atque odit aliquam molestiae architecto iste.</p>
+                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                        </div>
+                        <div class="home-img padd-15">
+                            <img src="assets/midia/adernos.jpeg" alt="Minha Foto">
+                        </div>
+                    </div>
+                </div>
             </section>
+            <!-- Home Section End-->
+            <!-- About Section Start-->
+             <section class="about section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-tittle padd-15">
+                            <h2>About us</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>Eu sou programador <span>Web Developer</span></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempore eveniet doloremque dolore, fugiat illo culpa quae earum ducimus velit consequatur magnam impedit pariatur nemo eos natus maxime expedita. Ad ipsa reiciendis nisi, quidem exercitationem, nostrum ex sunt, tempora facere mollitia officiis illo? Asperiores alias natus minima minus neque commodi omnis culpa quos cupiditate molestias.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Niver: <span>asdadsad</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Idade : <span>25</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Website : <span>www.algumacoisa.com</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Email : <span>dev.andreson@gmail.com</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Degree : <span>CS</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Phone : <span>(81) 98933-5864</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Cidade : <span>asdasad</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Freelance :      <span>Avaliando</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="" class="btn">Download CV</a>
+                                            <a href="" class="btn hir-me">Hire Me</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">
+                                            <h5>HTML</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 80%;"></div>
+                                                <div class="skills-percent">80%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>CSS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 60%;"></div>
+                                                <div class="skills-percent">60%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>JAVASCRIPT</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 20%;"></div>
+                                                <div class="skills-percent">20%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>BOOTSTRAP</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 40%;"></div>
+                                                <div class="skills-percent">40%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="tittle">Education</h3>
+                                    <div class="row">
+                                        <div class="timline-box padd-15">
+                                            timline
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="tittle">Experience</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </section>
+            <!-- About Section End-->
          </div>
         <!-- Main Content End-->
     </main>
