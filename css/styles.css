@@ -115,6 +115,7 @@
 /* Aside Start*/
 aside {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 270px;
@@ -126,6 +127,30 @@ aside {
     left: 0;
     top: 0;
     z-index: 10;
+
+    .perfil {
+        position: relative;
+        transform: translateX(-50%);
+        top: 25px;
+        left: 80px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid var(--skin-color);
+        box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+
+        .perfil-img {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
 }
 
 aside .logo {
@@ -604,7 +629,7 @@ h3.my-profession {
                     img {
                         width: 100%;
                         height: 100%;
-                        object-fit: cover;
+                        object-fit: contain;
                     }
                 }
             }
@@ -692,6 +717,15 @@ h3.my-profession {
                         box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
                     }
                 }
+
+                textarea.form-control {
+                    height: 140px;
+                }
+            }
+
+            .btn {
+                height: 50px;
+                padding: 0 50px;
             }
         }
     }
